@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        strong{
+            font-size: 125%;
+        }
+        input{
+            margin: 0.5% 2%;
+        }
+
+        .link{
+            color:black;
+        }
+        .link:hover{
+            color:rgb(113, 147, 233);
+        }
+
+        .botao{
+            top: 100%;
+            width: 8%;
+            border-radius: 8px;
+            color: rgb(0, 0, 0);
+        }
+
+    .botao:hover{
+        color:rgb(113, 147, 233);
+    }
+    </style>
+</head>
+<body>
+    <h1>Cadastre um funcionário</h1>
+    <br>
+
+    <form action="InserirFuncionarios.php" method="post">
+        <br>
+        <strong>Código:</strong>
+        <input type="text"name="codigo">
+        <br>
+        <strong>Nome:</strong>
+        <input type="text" name="nome">
+        <br>
+        <strong>Cargo:</strong>
+        <input type="text"name="cargo">
+        <br>
+        <strong>Departamento:</strong>
+        <input type="text" name="departamento">
+        <br>
+        <strong>Data de admissão:</strong>
+        <input type="date" name="admissao">
+        <br>
+        <strong>Salário:</strong>
+        <input type="number"  name="salario">
+        <br>
+        <strong>Endereço:</strong>
+        <input type="text"  name="endereco">
+        <br>
+        <strong>Email:</strong>
+        <input type="mail"  name="email">
+        <br>
+        <strong>Telefone:</strong>
+        <input type="text"  name="telefoneo">
+        <br>
+        <br>
+        <input class="botao" type="submit" value="Cadastrar">
+    </form>
+
+    <a class="link" href= "Funcionarios.php"> Lista de funcionarios</a>
+</body>
+</html>
+
+
